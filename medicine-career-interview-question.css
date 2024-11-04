@@ -5,6 +5,8 @@
   --green-light: #edf8f4;
   --orange-light: #f9f2ec;
   --purple-light: #f5ecff;
+  --blue-interest-color: #d9ebff;
+  --yellow-interest-color: #fceed5;
 }
 
 body {
@@ -25,6 +27,12 @@ body {
   border: none !important;
 }
 
+.yellow-interest-bg-color {
+  background-color: var(--yellow-interest-color) !important;
+}
+.blue-interest-bg-color {
+  background-color: var(--blue-interest-color) !important;
+}
 .pink-light-color-bg-color {
   background-color: var(--pink-light) !important;
 }
@@ -72,7 +80,7 @@ body {
   padding: 0 5% 0 5%;
 }
 .hero-wrapper {
-  background-image: url("./imgs/home-page-hero.jpg");
+  background-image: url("./imgs/medicine-hero.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 0 0 50px 50px;
@@ -80,6 +88,14 @@ body {
   display: flex;
   align-items: center;
   text-align: left;
+}
+
+.interview-question {
+  padding: 120px 0 120px 0;
+}
+.interview-question .who-we-are-wrapper {
+  align-items: center;
+  justify-content: center;
 }
 
 .what-we-do .what-we-do-wrapper,
@@ -248,32 +264,36 @@ footer .descrption {
 }
 
 @media (max-width: 768px) {
-  .who-we-are .who-we-are-wrapper {
+  .interview-question .interview-question-wrapper {
     justify-content: center;
     align-items: center;
   }
-  .who-we-are .who-we-are-wrapper .who-we-are-image {
+  .interview-question .interview-question-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  .interview-question .interview-question-wrapper .who-we-are-image {
     width: 60%;
     margin: 0 auto;
   }
   .what-we-do .what-we-do-wrapper .what-we-do-images-section {
     margin-bottom: 50px !important;
   }
-  .who-we-are .who-we-are-wrapper .btn-primary,
+  .interview-question .interview-question-wrapper .btn-primary,
   .what-we-do .what-we-do-wrapper .btn-primary {
     display: block;
     margin: 0 auto;
   }
 
-  .who-we-are .who-we-are-wrapper,
+  .interview-question .interview-question-wrapper,
   .what-we-do .what-we-do-wrapper {
     text-align: center;
   }
-  .who-we-are .who-we-are-wrapper .heading-text {
+  .who-we-are .interview-question-wrapper .heading-text {
     margin-top: 50px;
   }
 
-  .who-we-are .who-we-are-wrapper .long-multi-text,
+  .who-we-are .interview-question-wrapper .long-multi-text,
   .what-we-do .what-we-do-wrapper .long-multi-text {
     text-align: center;
   }

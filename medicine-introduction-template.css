@@ -5,6 +5,8 @@
   --green-light: #edf8f4;
   --orange-light: #f9f2ec;
   --purple-light: #f5ecff;
+  --blue-interest-color: #d9ebff;
+  --yellow-interest-color: #fceed5;
 }
 
 body {
@@ -25,6 +27,12 @@ body {
   border: none !important;
 }
 
+.yellow-interest-bg-color {
+  background-color: var(--yellow-interest-color) !important;
+}
+.blue-interest-bg-color {
+  background-color: var(--blue-interest-color) !important;
+}
 .pink-light-color-bg-color {
   background-color: var(--pink-light) !important;
 }
@@ -43,18 +51,17 @@ body {
 .purple-light-color-bg-color {
   background-color: var(--purple-light) !important;
 }
-.categories-wrapper {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+
+.introduction-template {
+  background-color: #f5f5f5;
+  padding: 120px 0 120px 0;
 }
 
-.categories-wrapper:nth-of-type(1) {
-  margin-bottom: 30px;
-}
-.category-card {
-  width: 350px;
+.introduction-template .category-card {
   padding: 30px 0 30px 0;
+}
+.categories-wrapper {
+  text-align: left;
 }
 .category-card a {
   text-decoration: none;
@@ -63,16 +70,12 @@ body {
 .category-card .card-body p {
   margin-bottom: 0;
 }
-.category-card .card-body img {
-  width: 100px;
-  margin-bottom: 30px;
-}
 
 .hero {
   padding: 0 5% 0 5%;
 }
 .hero-wrapper {
-  background-image: url("./imgs/home-page-hero.jpg");
+  background-image: url("./imgs/medicine-hero.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 0 0 50px 50px;
