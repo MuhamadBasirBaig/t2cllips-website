@@ -1,4 +1,4 @@
-<script>
+
   (function() {
     // Check if the current URL is a GitHub Pages URL
     console.log(window.location.hostname,"window.location.hostname")
@@ -8,4 +8,3 @@
       document.head.prepend(base);
     }
   })();
-</script>
