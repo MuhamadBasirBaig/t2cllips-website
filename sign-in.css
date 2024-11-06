@@ -73,19 +73,15 @@ body {
 }
 
 .hero {
-  padding: 0 5% 0 5%;
-}
-.hero-wrapper {
-  background-image: url("./imgs/home-page-hero.jpg");
+  background-image: url("./imgs/signin-hero.png");
   background-size: cover;
   background-position: center;
-  border-radius: 0 0 50px 50px;
-  height: 80vh;
+  height: 90vh;
   display: flex;
-  align-items: center;
-  text-align: left;
 }
-
+.hero .heading {
+  margin-top: 20px;
+}
 .what-we-do .what-we-do-wrapper,
 .who-we-are .who-we-are-wrapper {
   align-items: center;
